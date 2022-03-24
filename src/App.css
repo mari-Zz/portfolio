@@ -1,8 +1,53 @@
+:root {
+  --blue: hsl(207, 56%, 60%);
+  --purple: hsl(278, 38%, 68%);
+}
+
 * {
   outline: none;
 }
-.font {
+.heading-font {
   font-family: "Bungee", cursive;
+}
+
+.text-font {
+  font-family: "Red Hat Mono", monospace;
+}
+
+.heading-color {
+  color: var(--blue);
+}
+
+.gradiant {
+  background-color: var(--purple);
+  background-image: linear-gradient(315deg, var(--purple) 0%, var(--blue) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-color {
+  color: var(--purple);
+}
+
+.bttn-color {
+  border: 3px solid black;
+  color: var(--blue);
+  background-color: black;
+}
+
+.bttn-color:hover {
+  color: black;
+  background-color: var(--blue);
+}
+
+.background-color {
+  color: black;
+  background-color: hsla(278, 38%, 68%, 0.5);
+  background-image: linear-gradient(
+    315deg,
+    hsla(278, 38%, 68%, 0.5) 0%,
+    hsla(207, 56%, 60%, 0.5) 70%
+  );
 }
 
 .large-size-font {
@@ -34,11 +79,15 @@
   object-fit: contain;
 }
 .tools {
-  width: 12vw;
-  height: 12vw;
+  width: 15rem;
+  height: 15rem;
   cursor: grab;
 }
 
 .tools:active {
   cursor: grabbing;
+}
+
+.card-custom {
+  box-shadow: 0px 0px 10px var(--blue);
 }

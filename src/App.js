@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Main from "./components/main";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="container-fluid">
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 }

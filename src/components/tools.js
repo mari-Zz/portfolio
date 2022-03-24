@@ -4,11 +4,7 @@ function Tools() {
   let img = [];
   for (let i = 1; i <= 11; i++) {
     img.push(
-      <img
-        src={"./img/" + i + ".png"}
-        alt={"./img/" + i + ".png"}
-        className="img-size"
-      />
+      <img src={"./img/tools/" + i + ".png"} alt={i} className="img-size" />
     );
   }
   let settings = {
@@ -55,20 +51,22 @@ function Tools() {
   };
 
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="container mt">
-        <h1 className="medium-size-font font ms-3">Tools I've used..</h1>
+        <h1 className="medium-size-font heading-font ms-3 heading-color">
+          Tools I've used..
+        </h1>
       </div>
       <Slider {...settings}>
         {img.map((img) => {
           return (
-            <div key={img} className="tools mt-5 ">
+            <div key={img} className="tools mt-2 shadow">
               {img}
             </div>
           );
         })}
       </Slider>
-    </>
+    </div>
   );
 }
 
