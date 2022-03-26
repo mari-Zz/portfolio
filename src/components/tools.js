@@ -7,6 +7,7 @@ function Tools() {
       <img src={"./img/tools/" + i + ".png"} alt={i} className="img-size" />
     );
   }
+
   let settings = {
     infinite: true,
     speed: 1000,

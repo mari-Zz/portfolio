@@ -1,10 +1,23 @@
+import { useEffect, useState } from "react";
+
 function Header() {
+  const [anchorTarget, setAnchorTarget] = useState(null);
+
+  useEffect(() => {
+    setAnchorTarget(document.getElementById("contact"));
+  }, []);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    anchorTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <header className="container-fluid md">
       <nav className="navbar small-size-font heading-font">
         <ul className="nav gradiant">
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#contact" onClick={handleClick}>
               contact
             </a>
           </li>

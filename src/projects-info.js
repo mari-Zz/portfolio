@@ -18,14 +18,14 @@ let professional = [
   {
     title: "store website",
     description:
-      "First ever profesional project i worked on,website renovation",
+      "First ever profesional project i worked on,website renovation, wordpress website",
     img: "./img/projects/otsneba.png",
     url: "http://otsneba.ge/",
   },
   {
     title: "alfaplus",
     description:
-      "Second professional project i worked on, technology items website",
+      "Second professional project i worked on, technology items website, without ecommerce",
     img: "./img/projects/alfaplus.png",
     url: "https://www.alfaplus.ge/",
   },

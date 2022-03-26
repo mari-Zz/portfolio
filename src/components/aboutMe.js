@@ -1,8 +1,8 @@
 function AboutMe() {
   return (
-    <div className="container spacing p-5 rounded background-color">
+    <div className="container spacing p-4 rounded background-color">
       <h1 className="medium-size-font heading-font ms-4 ">About Me</h1>
-      <div className="row justify-content-md-center">
+      <div className="row justify-content-md-center mb-3">
         <div className="col-4 w-25 mt-3 me-5">
           <img className="rounded img-fluid" src="./img/me.jpg" alt="me" />
         </div>

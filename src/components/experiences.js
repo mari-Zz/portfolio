@@ -11,19 +11,24 @@ function Experiences() {
           {object.map((item) => {
             return (
               <div
-                class="card card-custom m-3 p-2 rounded background-color"
+                class="card box-shadow m-3 p-2 rounded background-color"
                 style={{ width: "20rem" }}
               >
                 <img
                   src={item.img}
-                  class="card-img-top rounded"
+                  class="card-img-top rounded box-shadow"
                   alt={item.title}
                 />
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title heading-font align-self-center">
                     {item.title}
                   </h5>
-                  <p class="card-text text-font">{item.description}</p>
+                  <p
+                    class="card-text text-font"
+                    style={{ textAlign: "justify" }}
+                  >
+                    {item.description}
+                  </p>
                   <a
                     href={item.url}
                     target="_blank"

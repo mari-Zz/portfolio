@@ -2,7 +2,9 @@ function Footer() {
   return (
     <div className="container-bg spacing d-flex flex-column align-items-center">
       <form className="container">
-        <h1 className="heading-font heading-color">Contact</h1>
+        <h1 id="contact" className="heading-font heading-color">
+          Contact
+        </h1>
         <div className="mb-3">
           <label
             for="exampleFormControlInput1"
@@ -25,6 +27,7 @@ function Footer() {
           </label>
           <textarea className="form-control text-font" rows="3"></textarea>
         </div>
+        <input type="submit" className="btn submit heading-font" />
       </form>
       <p className="text-font text-color">
         crated by &copy; MARIAM ZAQAREISHVILI
