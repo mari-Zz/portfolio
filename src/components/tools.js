@@ -1,6 +1,9 @@
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
-function Tools() {
+function Tools({ currentLanguage }) {
+  const { t } = useTranslation();
+
   let img = [];
   for (let i = 1; i <= 11; i++) {
     img.push(
@@ -17,11 +20,6 @@ function Tools() {
     autoplaySpeed: 2000,
     swipeToSlide: true,
     initialSlide: 0,
-    afterChange: function (index) {
-      console.log(
-        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-      );
-    },
 
     responsive: [
       {
@@ -54,8 +52,12 @@ function Tools() {
   return (
     <div className="overflow-hidden">
       <div className="container mt">
-        <h1 className="medium-size-font heading-font ms-3 heading-color">
-          Tools I've used..
+        <h1
+          className={`medium-size-font ms-3 heading-color ${
+            currentLanguage === "en" ? "heading-font" : "heading-font-ge"
+          }`}
+        >
+          {t("tools")}
         </h1>
       </div>
       <Slider {...settings}>

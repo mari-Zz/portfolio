@@ -2,12 +2,12 @@ import AboutMe from "./aboutMe";
 import Experiences from "./experiences";
 import Tools from "./tools";
 
-function Main() {
+function Main({ currentLanguage }) {
   return (
     <div className="container-bg">
-      <AboutMe />
-      <Tools />
-      <Experiences />
+      <AboutMe currentLanguage={currentLanguage} />
+      <Tools currentLanguage={currentLanguage} />
+      <Experiences currentLanguage={currentLanguage} />
     </div>
   );
 }

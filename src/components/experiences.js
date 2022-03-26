@@ -1,30 +1,45 @@
-import { professional, univercity } from "../projects-info";
+import { useTranslation } from "react-i18next";
 
-function Experiences() {
+function Experiences({ currentLanguage }) {
+  const { t } = useTranslation();
+
   const renderSection = (title, object) => {
     return (
       <>
-        <h2 className="small-size-font mt-4 ms-4 heading-font text-color">
+        <h2
+          className={`small-size-font mt-4 ms-4 text-color ${
+            currentLanguage === "en" ? "heading-font" : "heading-font-ge"
+          }`}
+        >
           {title}
         </h2>
         <div className="d-flex flex-wrap justify-content-around mt-4">
           {object.map((item) => {
             return (
               <div
-                class="card box-shadow m-3 p-2 rounded background-color"
+                className="card box-shadow m-3 p-2 rounded background-color"
                 style={{ width: "20rem" }}
+                key={item.title}
               >
                 <img
                   src={item.img}
-                  class="card-img-top rounded box-shadow"
+                  className="card-img-top rounded box-shadow"
                   alt={item.title}
                 />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title heading-font align-self-center">
+                <div className="card-body d-flex flex-column">
+                  <h5
+                    className={`card-title align-self-center ${
+                      currentLanguage === "en"
+                        ? "heading-font"
+                        : "heading-font-ge"
+                    }`}
+                  >
                     {item.title}
                   </h5>
                   <p
-                    class="card-text text-font"
+                    className={`card-text ${
+                      currentLanguage === "en" ? "text-font" : "text-font-ge"
+                    }`}
                     style={{ textAlign: "justify" }}
                   >
                     {item.description}
@@ -33,7 +48,11 @@ function Experiences() {
                     href={item.url}
                     target="_blank"
                     rel="noreferrer"
-                    class="btn bttn-color heading-font"
+                    className={`btn bttn-color ${
+                      currentLanguage === "en"
+                        ? "heading-font"
+                        : "heading-font-ge"
+                    }`}
                   >
                     See project
                   </a>
@@ -48,12 +67,22 @@ function Experiences() {
 
   return (
     <div className="container mt">
-      <h1 className="medium-size-font heading-font ms-4 heading-color">
-        My experience
+      <h1
+        className={`medium-size-font ms-4 heading-color ${
+          currentLanguage === "en" ? "heading-font" : "heading-font-ge"
+        }`}
+      >
+        {t("experience")}
       </h1>
 
-      {renderSection("Projects I worked on in univercity", univercity)}
-      {renderSection("Projects I worked on after graduating", professional)}
+      {renderSection(
+        t("experience_title1"),
+        t("univercity", { returnObjects: true })
+      )}
+      {renderSection(
+        t("experience_title2"),
+        t("professional", { returnObjects: true })
+      )}
     </div>
   );
 }

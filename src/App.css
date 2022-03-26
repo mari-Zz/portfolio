@@ -11,8 +11,16 @@
   font-family: "Bungee", cursive;
 }
 
+.heading-font-ge {
+  font-family: "BPG Square Mtavruli", sans-serif;
+}
+
 .text-font {
   font-family: "Roboto", sans-serif;
+}
+
+.text-font-ge {
+  font-family: "Arial GEO Bold", sans-serif;
 }
 
 .heading-color {
@@ -61,6 +69,21 @@
 
 .spacing {
   margin-top: 15rem;
+}
+
+.globe {
+  color: var(--blue);
+  padding: 0;
+  border: 0;
+}
+
+.globe:hover {
+  color: var(--purple);
+}
+
+.dropdown:hover {
+  background-color: black;
+  color: var(--blue);
 }
 
 .img-size {
@@ -118,4 +141,13 @@
   padding: 0.5rem;
   border-radius: 100%;
   font-size: 1.5rem;
+  transition: 0.5s ease-out;
+  border: 3px solid black;
+}
+
+.myBtn:hover {
+  border: 3px solid var(--purple);
+  background-image: none;
+  background-color: black;
+  color: var(--purple);
 }
