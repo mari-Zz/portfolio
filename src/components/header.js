@@ -1,20 +1,33 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { BsGlobe2 } from "react-icons/bs";
+import { BsGlobe2, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import i18next from "i18next";
 
 function Header({ currentLanguage, setCurrentLanguage }) {
   const { t } = useTranslation();
 
   const [anchorTarget, setAnchorTarget] = useState(null);
+  const [backColor, setBackColor] = useState("black");
 
   useEffect(() => {
     setAnchorTarget(document.getElementById("contact"));
   }, []);
 
+  useEffect(() => {
+    document.body.style.backgroundColor = backColor;
+  }, [backColor]);
+
   const handleClick = (e) => {
     e.preventDefault();
     anchorTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const toggleBackgroundColor = () => {
+    if (backColor === "black") {
+      setBackColor("hsla(206, 31%, 84%, 0.411)");
+    } else {
+      setBackColor("black");
+    }
   };
 
   return (
@@ -48,7 +61,7 @@ function Header({ currentLanguage, setCurrentLanguage }) {
         </ul>
 
         <ul className="nav ">
-          <div className="btn-group">
+          <li className="btn-group">
             <button
               type="button"
               className="btn globe dropdown-toggle small-size-font gradiant"
@@ -84,7 +97,18 @@ function Header({ currentLanguage, setCurrentLanguage }) {
                 </button>
               </li>
             </ul>
-          </div>
+          </li>
+          <li className="ms-2">
+            <button
+              type="button"
+              className="btn small-size-font"
+              aria-expanded="false"
+              style={{ boxShadow: "none", color: "rgb(227 225 42)" }}
+              onClick={toggleBackgroundColor}
+            >
+              {backColor === "black" ? <BsFillSunFill /> : <BsFillMoonFill />}
+            </button>
+          </li>
         </ul>
       </nav>
 

@@ -142,7 +142,7 @@
   border-radius: 100%;
   font-size: 1.5rem;
   transition: 0.5s ease-out;
-  border: 3px solid black;
+  border: 3px solid hsla(0, 0%, 0%, 0);
 }
 
 .myBtn:hover {

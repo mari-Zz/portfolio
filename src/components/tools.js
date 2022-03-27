@@ -63,7 +63,7 @@ function Tools({ currentLanguage }) {
       <Slider {...settings}>
         {img.map((img) => {
           return (
-            <div key={img} className="tools mt-2 shadow">
+            <div key={img} className="tools mt-2">
               {img}
             </div>
           );
