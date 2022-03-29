@@ -6,8 +6,59 @@
   "profession": "ვებ დეველოპერი",
   "about_me": "ჩემს შესახებ",
   "about_me_text": "მე ახლახან დავამთავრე ფრონტ-ენდის დეველოპერი, ვმუშაობდი ფრონტ-ენდის პროექტებზე და wordpress-ის ვებსაიტებზე. მიუხედავად იმისა, რომ ბევრ პროექტზე მუშაობის დიდი გამოცდილება არ მაქვს, ვფიქრობ, მაქვს საჭირო უნარები, რომ დავიწყო ჩემი კარიერა და დროთა განმავლობაში გავიუმჯობესო საკუთარი თავი სწავლით და უფრო რთული აპლიკაციების შექმნით. ძალიან მტკიცე ვარ და ძალიან სწრაფად ვსწავლობ. ასევე სწავლის პროცესში ვარ back-end განვითარების პროცესში. ჩემი საერთო მიზანია გავხდე საუკეთესო ვებ დეველოპერი, რომელიც შემიძლია ვიყო და ამ ინდუსტრიაში რაიმე ახალი შემოვიტანო.",
-  "tools": "გამოყენებული ენები..",
+  "tools": "ენები, რომელსაც ვიყენებ..",
   "experience": "ჩემი გამოცდილება",
-  "experience_title1": "უნივერსიტეტში გაკეთებული პროექტები",
-  "experience_title2": "უნივერსიტეტის შემდგომ გაკეთებული პროექტები"
+  "experience_title1": "სრული პროექტები რომლებზეც მიმუშავია",
+  "experience_title2": "იხილეთ ჩემს მიერ გაკეთებული ვებ-აპლიკაციები",
+  "btn_text": "იხილეთ პროექტი",
+  "univercity": [
+    {
+      "title": "HTML/CSS",
+      "description": "ჩემი პირველი პროექტი აწყობილი ნოლიდან,მხოლოდ HTML/CSS",
+      "img": "./img/projects/ecofood.png",
+      "url": "https://github.com/mari-Zz/my-first-project-ever-HTML-CSS"
+    },
+    {
+      "title": "marvel",
+      "description": "მარველის საინფორმაციო ვებსაიტი, ფილმების და გმირების შესახებ, შექმნილია უფასო ტემპლეიტის გამოყენებით და რეფორმირებით",
+      "img": "./img/projects/marvel.png",
+      "url": "https://github.com/mari-Zz/marvel-website"
+    },
+    {
+      "title": "store website",
+      "description": "პროფესიუნალური პროექტი რომელზეც ვიმუშავე,ვებსაიტის ცვლილება კლიენტის მოთხოვნების შესაბამისად, ვორდპრესი",
+      "img": "./img/projects/otsneba.png",
+      "url": "http://otsneba.ge/"
+    },
+    {
+      "title": "alfaplus",
+      "description": "პროფესიონალური პროექტი, რომელზეც ვმუშაობდით ჯგუფი, ტექნოლოგიების მაღაზიის ვებსაიტი, ონლაინ გაყიდვების გარეშე, ვორდპრესი",
+      "img": "./img/projects/alfaplus.png",
+      "url": "https://www.alfaplus.ge/"
+    },
+    {
+      "title": "Portfolio",
+      "description": "პირადი პორტფოლიო ვებ-საიტი, აშენებული React.js-ზე, ნახლდება დროთა განმავლობაში",
+      "img": "./img/projects/portfolio.png",
+      "url": "https://github.com/mari-Zz/portfolio"
+    }
+  ],
+  "professional": [
+    {
+      "title": "random generator",
+      "description": "რეანდომული გენერატორი, რომელიც გენერირებს ანიმეს ჟანრის მიხედვით,ფუნქციონალი javascript, უცხო API-ის გამოყენებით",
+      "img": "./img/projects/anime.png",
+      "url": "https://github.com/mari-Zz/random-anime-generator"
+    },
+    {
+      "title": "CRUD application",
+      "description": "crud აპლიკაცია, შექმნილია ლარაველის და sql ბაზის გამოყენებით",
+      "img": "./img/projects/crud.png",
+      "url": "https://github.com/mari-Zz/learning-lravel-CRUD"
+    }
+  ],
+  "contact_header": "კონტაქტი",
+  "email_address": "თქვენი მეილი",
+  "contact_me": "დამიკავშირდით",
+  "submit": "გაგზავნა"
 }

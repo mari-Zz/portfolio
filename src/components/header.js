@@ -7,7 +7,7 @@ function Header({ currentLanguage, setCurrentLanguage }) {
   const { t } = useTranslation();
 
   const [anchorTarget, setAnchorTarget] = useState(null);
-  const [backColor, setBackColor] = useState("black");
+  const [backColor, setBackColor] = useState("hsla(206, 31%, 84%, 0.411)");
 
   useEffect(() => {
     setAnchorTarget(document.getElementById("contact"));
@@ -23,10 +23,10 @@ function Header({ currentLanguage, setCurrentLanguage }) {
   };
 
   const toggleBackgroundColor = () => {
-    if (backColor === "black") {
-      setBackColor("hsla(206, 31%, 84%, 0.411)");
+    if (backColor === "hsla(206, 31%, 84%, 0.411)") {
+      setBackColor("#0A090D");
     } else {
-      setBackColor("black");
+      setBackColor("hsla(206, 31%, 84%, 0.411)");
     }
   };
 
@@ -103,10 +103,14 @@ function Header({ currentLanguage, setCurrentLanguage }) {
               type="button"
               className="btn small-size-font"
               aria-expanded="false"
-              style={{ boxShadow: "none", color: "rgb(227 225 42)" }}
+              style={{ boxShadow: "none", color: "#f2de79" }}
               onClick={toggleBackgroundColor}
             >
-              {backColor === "black" ? <BsFillSunFill /> : <BsFillMoonFill />}
+              {backColor === "hsla(206, 31%, 84%, 0.411)" ? (
+                <BsFillMoonFill />
+              ) : (
+                <BsFillSunFill />
+              )}
             </button>
           </li>
         </ul>

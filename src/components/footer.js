@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 function Footer({ currentLanguage }) {
+  const { t } = useTranslation();
   return (
     <div className="container-bg spacing d-flex flex-column align-items-center">
       <form className="container">
@@ -8,7 +11,7 @@ function Footer({ currentLanguage }) {
             currentLanguage === "en" ? "heading-font" : "heading-font-ge"
           }`}
         >
-          Contact
+          {t("contact_header")}
         </h1>
         <div
           className={`mb-3 ${
@@ -19,7 +22,7 @@ function Footer({ currentLanguage }) {
             for="exampleFormControlInput1"
             className="form-label text-color"
           >
-            Email address
+            {t("email_address")}
           </label>
           <input type="email" className="form-control" placeholder="Gmail" />
         </div>
@@ -32,11 +35,17 @@ function Footer({ currentLanguage }) {
             for="exampleFormControlTextarea1"
             className="form-label text-color"
           >
-            Example textarea
+            {t("contact_me")}
           </label>
           <textarea className="form-control" rows="3"></textarea>
         </div>
-        <input type="submit" className="btn submit heading-font" />
+        <input
+          type="submit"
+          className={`btn submit ${
+            currentLanguage === "en" ? "heading-font" : "heading-font-ge"
+          }`}
+          value={t("submit")}
+        />
       </form>
       <p
         className={`text-color ${

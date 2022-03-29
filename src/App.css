@@ -1,6 +1,7 @@
 :root {
-  --blue: hsl(207, 56%, 60%);
-  --purple: hsl(278, 38%, 68%);
+  --primary: hsl(220, 45%, 45%);
+  --secondary: hsl(22, 86%, 65%);
+  --text: hsl(255, 18%, 4%);
 }
 
 * {
@@ -13,6 +14,7 @@
 
 .heading-font-ge {
   font-family: "BPG Square Mtavruli", sans-serif;
+  font-weight: bold;
 }
 
 .text-font {
@@ -20,36 +22,35 @@
 }
 
 .text-font-ge {
-  font-family: "Arial GEO Bold", sans-serif;
+  font-family: "BPG Glaho Arial", sans-serif;
 }
 
 .heading-color {
-  color: var(--blue);
+  color: var(--primary);
 }
 
 .gradiant {
-  background-color: var(--purple);
-  background-image: linear-gradient(315deg, var(--purple) 0%, var(--blue) 90%);
+  background-color: var(--secondary);
+  background-image: linear-gradient(
+    315deg,
+    var(--secondary) 0%,
+    var(--primary) 90%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-color {
-  color: var(--purple);
+  color: var(--secondary);
 }
 
 .background-color {
-  color: black;
-  background-color: hsla(278, 38%, 68%, 0.5);
-  background-image: linear-gradient(
-    315deg,
-    hsla(278, 38%, 68%, 0.5) 0%,
-    hsla(207, 56%, 60%, 0.5) 70%
-  );
+  color: var(--text);
+  background-color: #f2de79;
 }
 
 .large-size-font {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .medium-size-font {
   font-size: 2.5rem;
@@ -72,18 +73,18 @@
 }
 
 .globe {
-  color: var(--blue);
+  color: var(--primary);
   padding: 0;
   border: 0;
 }
 
 .globe:hover {
-  color: var(--purple);
+  color: var(--secondary);
 }
 
 .dropdown:hover {
-  background-color: black;
-  color: var(--blue);
+  background-color: var(--text);
+  color: var(--primary);
 }
 
 .img-size {
@@ -102,29 +103,29 @@
 }
 
 .bttn-color {
-  color: var(--blue);
-  background-color: black;
+  color: var(--primary);
+  background-color: var(--text);
 }
 
 .bttn-color:hover {
-  color: black;
-  background-color: var(--blue);
-  box-shadow: 0px 0px 10px var(--purple);
+  color: var(--text);
+  background-color: var(--primary);
+  box-shadow: 0px 0px 10px var(--secondary);
 }
 
 .box-shadow {
-  box-shadow: 0px 0px 10px var(--blue);
+  box-shadow: 0px 0px 10px var(--secondary);
 }
 
 .submit {
-  border: 2px solid var(--blue);
-  color: black;
-  background-color: var(--blue);
+  border: 2px solid var(--primary);
+  color: var(--text);
+  background-color: var(--primary);
 }
 
 .submit:hover {
-  color: var(--blue);
-  background-color: black;
+  color: var(--primary);
+  background-color: var(--text);
 }
 
 .myBtn {
@@ -135,19 +136,19 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-image: linear-gradient(315deg, var(--purple) 0%, var(--blue) 90%);
-  color: black;
+  background-color: var(--secondary);
+  color: var(--text);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 100%;
   font-size: 1.5rem;
   transition: 0.5s ease-out;
-  border: 3px solid hsla(0, 0%, 0%, 0);
+  border: 3px solid var(--secondary);
 }
 
 .myBtn:hover {
-  border: 3px solid var(--purple);
+  border: 3px solid var(--secondary);
   background-image: none;
-  background-color: black;
-  color: var(--purple);
+  background-color: var(--text);
+  color: var(--secondary);
 }

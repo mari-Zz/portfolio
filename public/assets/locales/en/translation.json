@@ -6,10 +6,11 @@
   "profession": "WEB DEVELOPER",
   "about_me": "About Me",
   "about_me_text": "I am resently gradueted front-end developer, I have worked on front-end projects and wordpress web-sites. Although, I do not have much experience with working on many projects, I think I have necessary skills to start my career and over time, improve myself by learning and building more difficult applications. I am very determined and learn very quikly. I am in the process of learning back-end development as well. My overall goal is to become best web-developer I could be and bring something new to this industry.",
-  "tools": "Tools I've used..",
+  "tools": "Tools I know..",
   "experience": "My experience",
-  "experience_title1": "Projects I worked on in univercity",
-  "experience_title2": "Projects I worked on after graduating",
+  "experience_title1": "Full projects I worked on",
+  "experience_title2": "See Web-applications I've made",
+  "btn_text": "See Source",
   "univercity": [
     {
       "title": "HTML/CSS",
@@ -19,29 +20,45 @@
     },
     {
       "title": "marvel",
-      "description": "Marvel informative website, about movies and characters, created using template",
+      "description": "Marvel informative website about movies and characters, created using template",
       "img": "./img/projects/marvel.png",
       "url": "https://github.com/mari-Zz/marvel-website"
-    }
-  ],
-  "professional": [
+    },
     {
       "title": "store website",
-      "description": "First ever profesional project i worked on,website renovation, wordpress website",
+      "description": "Profesional project I worked on, website renovation, wordpress",
       "img": "./img/projects/otsneba.png",
       "url": "http://otsneba.ge/"
     },
     {
       "title": "alfaplus",
-      "description": "Second professional project i worked on, technology items website, without ecommerce",
+      "description": "Professional project, worked on with a group, technology items website, without E-commerce",
       "img": "./img/projects/alfaplus.png",
       "url": "https://www.alfaplus.ge/"
     },
+    {
+      "title": "Portfolio",
+      "description": "My personal portfolio web-site, created using React.js, updating with time",
+      "img": "./img/projects/portfolio.png",
+      "url": "https://github.com/mari-Zz/portfolio"
+    }
+  ],
+  "professional": [
     {
       "title": "random generator",
       "description": "Random anime generator by genres,javascript app, using foreign API",
       "img": "./img/projects/anime.png",
       "url": "https://github.com/mari-Zz/random-anime-generator"
+    },
+    {
+      "title": "CRUD application",
+      "description": "Crud application, useing laravel and sql",
+      "img": "./img/projects/crud.png",
+      "url": "https://github.com/mari-Zz/learning-lravel-CRUD"
     }
-  ]
+  ],
+  "contact_header": "Contact",
+  "email_address": "Email address",
+  "contact_me": "contact me",
+  "submit": "Submit"
 }

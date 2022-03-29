@@ -17,8 +17,8 @@ function Experiences({ currentLanguage }) {
           {object.map((item) => {
             return (
               <div
-                className="card box-shadow m-3 p-2 rounded background-color"
-                style={{ width: "20rem" }}
+                className="card box-shadow m-4 p-2 rounded background-color"
+                style={{ width: "33rem" }}
                 key={item.title}
               >
                 <img
@@ -54,7 +54,7 @@ function Experiences({ currentLanguage }) {
                         : "heading-font-ge"
                     }`}
                   >
-                    See project
+                    {t("btn_text")}
                   </a>
                 </div>
               </div>
