@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { BsGlobe2, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
+import { AiFillGithub } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 import i18next from "i18next";
 
 function Header({ currentLanguage, setCurrentLanguage }) {
@@ -37,7 +40,7 @@ function Header({ currentLanguage, setCurrentLanguage }) {
           currentLanguage === "en" ? "heading-font" : "heading-font-ge"
         }`}
       >
-        <ul className="nav gradiant">
+        <ul className="nav gradiant nav-bigScreen">
           <li className="nav-item">
             <a className="nav-link" href="#contact" onClick={handleClick}>
               {t("contact")}
@@ -53,10 +56,47 @@ function Header({ currentLanguage, setCurrentLanguage }) {
               {t("github")}
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              {t("resume")}
-            </a>
+        </ul>
+
+        {/* for responsive navbar */}
+        <ul className="nav nav-smallScreen">
+          <li className="btn-group">
+            <button
+              type="button"
+              className="btn globe small-size-font gradiant"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style={{ boxShadow: "none" }}
+            >
+              <GiHamburgerMenu />
+            </button>
+            <ul className="dropdown-menu background-color">
+              <li>
+                <a
+                  className="dropdown-item dropdown"
+                  href="#contact"
+                  onClick={handleClick}
+                >
+                  <div className="d-flex align-items-center">
+                    <GrMail className="me-2" />
+                    {t("contact")}
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="dropdown-item dropdown"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/mari-Zz"
+                >
+                  <div className="d-flex align-items-center">
+                    <AiFillGithub className="me-2" />
+                    {t("github")}
+                  </div>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
 
@@ -117,12 +157,16 @@ function Header({ currentLanguage, setCurrentLanguage }) {
       </nav>
 
       <div
-        className={`mt d-flex flex-column align-items-center ${
+        className={`mt d-flex flex-column align-items-center justify-content-center ${
           currentLanguage === "en" ? "heading-font" : "heading-font-ge"
         }`}
       >
-        <div className="large-size-font heading-color">{t("name")}</div>
-        <div className="medium-size-font  text-color">{t("profession")}</div>
+        <div className="large-size-font heading-color text-center">
+          {t("name")}
+        </div>
+        <div className="medium-size-font text-color text-center">
+          {t("profession")}
+        </div>
       </div>
     </header>
   );

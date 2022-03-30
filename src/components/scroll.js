@@ -13,13 +13,15 @@ function Scroll() {
   const handleScroll = () => {
     const myButton = document.getElementById("btn");
 
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      myButton.style.display = "flex";
-    } else {
-      myButton.style.display = "none";
+    if (window.innerWidth >= 1024) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        myButton.style.display = "flex";
+      } else {
+        myButton.style.display = "none";
+      }
     }
   };
 

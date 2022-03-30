@@ -8,6 +8,10 @@
   outline: none;
 }
 
+.nav-smallScreen {
+  display: none;
+}
+
 .heading-font {
   font-family: "Bungee", cursive;
 }
@@ -60,6 +64,10 @@
   font-size: 1.5rem;
 }
 
+.text-size-font {
+  font-size: 1.25rem;
+}
+
 .mt {
   margin-top: 8rem;
 }
@@ -78,11 +86,13 @@
   border: 0;
 }
 
-.globe:hover {
+.globe:hover,
+.globe:active {
   color: var(--secondary);
 }
 
-.dropdown:hover {
+.dropdown:hover,
+.dropdown:active {
   background-color: var(--text);
   color: var(--primary);
 }
@@ -107,7 +117,8 @@
   background-color: var(--text);
 }
 
-.bttn-color:hover {
+.bttn-color:hover,
+.bttn-color:active {
   color: var(--text);
   background-color: var(--primary);
   box-shadow: 0px 0px 10px var(--secondary);
@@ -123,7 +134,8 @@
   background-color: var(--primary);
 }
 
-.submit:hover {
+.submit:hover,
+.submit:active {
   color: var(--primary);
   background-color: var(--text);
 }
@@ -146,9 +158,80 @@
   border: 3px solid var(--secondary);
 }
 
-.myBtn:hover {
+.myBtn:hover,
+.myBtn:active {
   border: 3px solid var(--secondary);
   background-image: none;
   background-color: var(--text);
   color: var(--secondary);
+}
+
+@media screen and (min-device-width: 500px) and (max-device-width: 1024px) {
+  .nav-bigScreen {
+    display: none;
+  }
+  .nav-smallScreen {
+    display: block;
+  }
+
+  .large-size-font {
+    font-size: 2.3rem;
+  }
+  .medium-size-font {
+    font-size: 1.5rem;
+  }
+
+  .small-size-font {
+    font-size: 1.3rem;
+  }
+  .text-size-font {
+    font-size: 1rem;
+  }
+
+  .mt {
+    margin-top: 8rem;
+  }
+
+  .ml {
+    margin-left: 17rem;
+  }
+
+  .spacing {
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .nav-bigScreen {
+    display: none;
+  }
+  .nav-smallScreen {
+    display: block;
+  }
+
+  .large-size-font {
+    font-size: 1.8rem;
+  }
+  .medium-size-font {
+    font-size: 1.2rem;
+  }
+
+  .small-size-font {
+    font-size: 1.2rem;
+  }
+  .text-size-font {
+    font-size: 1rem;
+  }
+
+  .mt {
+    margin-top: 5rem;
+  }
+
+  .ml {
+    margin-left: 15rem;
+  }
+
+  .spacing {
+    margin-top: 10rem;
+  }
 }
