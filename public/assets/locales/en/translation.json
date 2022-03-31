@@ -5,7 +5,8 @@
   "name": "MARIAM ZAQAREISHVILI",
   "profession": "WEB DEVELOPER",
   "about_me": "About Me",
-  "about_me_text": "I am resently gradueted front-end developer, I have worked on front-end projects and wordpress web-sites. Although, I do not have much experience with working on many projects, I think I have necessary skills to start my career and over time, improve myself by learning and building more difficult applications. I am very determined and learn very quikly. I am in the process of learning back-end development as well. My overall goal is to become best web-developer I could be and bring something new to this industry.",
+  "about_me_text_p1": "I started learning programming 2 years ago, I recently gradueted from Batumi Shota Rustaveli state univercity. I was majoring in finances and minoring in computer science. Also finished vocational program on front-end development in same univercity. I have worked on front-end projects and wordpress web-sites.",
+  "about_me_text_p2": "Although, I do not have much experience with working on many projects, I think I have necessary skills to start my career and over time, improve myself by learning and building more difficult applications. I am very determined and learn very quikly. I am in the process of learning back-end development as well. My overall goal is to become best web-developer I could be and bring something new to this industry. If you are interested, you can learn about my experience and my skills down below.",
   "tools": "Tools I know..",
   "experience": "My experience",
   "experience_title1": "Full projects I worked on",
@@ -19,19 +20,19 @@
       "url": "https://github.com/mari-Zz/my-first-project-ever-HTML-CSS"
     },
     {
-      "title": "marvel",
+      "title": "Marvel",
       "description": "Marvel informative website about movies and characters, created using template",
       "img": "./img/projects/marvel.png",
       "url": "https://github.com/mari-Zz/marvel-website"
     },
     {
-      "title": "store website",
+      "title": "Store website",
       "description": "Profesional project I worked on, website renovation, wordpress",
       "img": "./img/projects/otsneba.png",
       "url": "http://otsneba.ge/"
     },
     {
-      "title": "alfaplus",
+      "title": "Alfaplus",
       "description": "Professional project, worked on with a group, technology items website, without E-commerce",
       "img": "./img/projects/alfaplus.png",
       "url": "https://www.alfaplus.ge/"
@@ -45,7 +46,7 @@
   ],
   "professional": [
     {
-      "title": "random generator",
+      "title": "Random generator",
       "description": "Random anime generator by genres,javascript app, using foreign API",
       "img": "./img/projects/anime.png",
       "url": "https://github.com/mari-Zz/random-anime-generator"

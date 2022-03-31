@@ -16,15 +16,16 @@ function AboutMe({ currentLanguage }) {
         className="row justify-content-md-center clearfix m-2 mb-3"
         style={{ "--gap": "2rem" }}
       >
-        <div className="col-sm-4">
+        <div className="col-sm-3">
           <img className="rounded img-size" src="./img/me.jpg" alt="me" />
         </div>
         <div
-          className={`col-sm-8 text-size-font mt-2 ${
+          className={`col-sm-8 d-flex flex-column justify-content-center text-size-font mt-2 ${
             currentLanguage === "en" ? "text-font" : "text-font-ge"
           }`}
         >
-          {t("about_me_text")}
+          <p>{t("about_me_text_p1")}</p>
+          <p>{t("about_me_text_p2")}</p>
         </div>
       </div>
     </div>
