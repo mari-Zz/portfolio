@@ -1,8 +1,8 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": ".",
-  "private": false,
+  "homepage": "https://mari-zz.github.io/portfolio/",
+  "private": true,
   "dependencies": {
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
