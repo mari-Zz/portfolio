@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://mari-Zz.github.io/portfolio",
+  "homepage": "https://mari-zz.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/react": "^12.1.4",
