@@ -166,6 +166,12 @@
   color: var(--secondary);
 }
 
+#alert,
+#error {
+  display: none;
+  transition: display 0s 2s;
+}
+
 @media screen and (min-device-width: 500px) and (max-device-width: 1024px) {
   .nav-bigScreen {
     display: none;

@@ -4,6 +4,7 @@
   "homepage": "https://mari-zz.github.io/portfolio/",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.5.0",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "flag-icon-css": "^4.1.7",

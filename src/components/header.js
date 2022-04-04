@@ -114,7 +114,7 @@ function Header({ currentLanguage, setCurrentLanguage }) {
             <ul className="dropdown-menu dropdown-menu-end background-color">
               <li>
                 <button
-                  className="dropdown-item dropdown"
+                  className="dropdown-item dropdown heading-font"
                   onClick={() => {
                     i18next.changeLanguage("en");
                     setCurrentLanguage("en");

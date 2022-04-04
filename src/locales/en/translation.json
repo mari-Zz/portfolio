@@ -59,7 +59,8 @@
     }
   ],
   "contact_header": "Contact",
-  "email_address": "Email address",
-  "contact_me": "contact me",
-  "submit": "Submit"
+  "contact_me": "Send a message",
+  "submit": "Submit",
+  "alert_success": "Thank you for your message!",
+  "alert_error": "Please input all the fields!"
 }
