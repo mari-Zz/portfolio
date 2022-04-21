@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 function AboutMe({ currentLanguage }) {
   const { t } = useTranslation();
   return (
-    <div className="container spacing p-4 rounded background-color">
+    <div className="container spacing p-4 rounded background-color reveal">
       <h1
         className={`medium-size-font  ms-3 ${
           currentLanguage === "en" ? "heading-font" : "heading-font-ge"

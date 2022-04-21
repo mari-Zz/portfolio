@@ -172,6 +172,19 @@
   transition: display 0s 2s;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
 @media screen and (min-device-width: 500px) and (max-device-width: 1024px) {
   .nav-bigScreen {
     display: none;
@@ -206,6 +219,7 @@
     margin-top: 12rem;
   }
 }
+
 
 @media screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .nav-bigScreen {

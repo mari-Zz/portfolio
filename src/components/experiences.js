@@ -66,7 +66,7 @@ function Experiences({ currentLanguage }) {
   };
 
   return (
-    <div className="container mt">
+    <div className="container mt reveal">
       <h1
         className={`medium-size-font ms-4 heading-color ${
           currentLanguage === "en" ? "heading-font" : "heading-font-ge"
