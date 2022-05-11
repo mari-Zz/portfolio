@@ -56,6 +56,12 @@
       "description": "crud აპლიკაცია, შექმნილია ლარაველის და sql ბაზის გამოყენებით",
       "img": "./img/projects/crud.png",
       "url": "https://github.com/mari-Zz/learning-lravel-CRUD"
+    },
+    {
+      "title": "PHP-product crud",
+      "description": "აპლიკაცია პროდუქციის ხილვის, დამატების და წაშლისთვის, შექმინილი PHP-ის ობიექტზე ორიენტირებული დაპროგრამებით, ხოლო frontend აწყობილი React-ზე",
+      "img": "./img/projects/phpOOP.png",
+      "url": "https://bitbucket.org/mariamzaq/php-product/src/master/"
     }
   ],
   "contact_header": "კონტაქტი",
