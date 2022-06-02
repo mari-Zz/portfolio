@@ -11,57 +11,48 @@
   "experience": "ჩემი გამოცდილება",
   "experience_title1": "სრული პროექტები რომლებზეც მიმუშავია",
   "experience_title2": "იხილეთ ჩემს მიერ გაკეთებული ვებ-აპლიკაციები",
-  "btn_text": "იხილეთ პროექტი",
-  "univercity": [
-    {
-      "title": "HTML/CSS",
-      "description": "ჩემი პირველი პროექტი აწყობილი ნოლიდან,მხოლოდ HTML/CSS",
-      "img": "./img/projects/ecofood.png",
-      "url": "https://github.com/mari-Zz/my-first-project-ever-HTML-CSS"
-    },
+  "btn_src_text": "იხილეთ კოდი",
+  "btn_web_text": "ვებ-საიტი",
+  "full_project": [
     {
       "title": "Marvel",
       "description": "მარველის საინფორმაციო ვებსაიტი, ფილმების და გმირების შესახებ, შექმნილია უფასო ტემპლეიტის გამოყენებით და რეფორმირებით",
       "img": "./img/projects/marvel.png",
-      "url": "https://github.com/mari-Zz/marvel-website"
+      "src_url": "https://github.com/mari-Zz/marvel-website"
     },
     {
       "title": "Store website",
       "description": "პროფესიუნალური პროექტი რომელზეც ვიმუშავე,ვებსაიტის ცვლილება კლიენტის მოთხოვნების შესაბამისად, ვორდპრესი",
       "img": "./img/projects/otsneba.png",
-      "url": "http://otsneba.ge/"
+      "web_url": "http://otsneba.ge/"
     },
     {
       "title": "Alfaplus",
       "description": "პროფესიონალური პროექტი, რომელზეც ვმუშაობდით ჯგუფი, ტექნოლოგიების მაღაზიის ვებსაიტი, ონლაინ გაყიდვების გარეშე, ვორდპრესი",
       "img": "./img/projects/alfaplus.png",
-      "url": "https://www.alfaplus.ge/"
+      "web_url": "https://www.alfaplus.ge/"
     },
     {
       "title": "Portfolio",
       "description": "პირადი პორტფოლიო ვებ-საიტი, აშენებული React.js-ზე, ნახლდება დროთა განმავლობაში",
       "img": "./img/projects/portfolio.png",
-      "url": "https://github.com/mari-Zz/portfolio"
+      "src_url": "https://github.com/mari-Zz/portfolio"
     }
   ],
-  "professional": [
+  "nonFull_project": [
     {
       "title": "Random generator",
       "description": "რეანდომული გენერატორი, რომელიც გენერირებს ანიმეს ჟანრის მიხედვით,ფუნქციონალი javascript, უცხო API-ის გამოყენებით",
       "img": "./img/projects/anime.png",
-      "url": "https://github.com/mari-Zz/random-anime-generator"
-    },
-    {
-      "title": "CRUD application",
-      "description": "crud აპლიკაცია, შექმნილია ლარაველის და sql ბაზის გამოყენებით",
-      "img": "./img/projects/crud.png",
-      "url": "https://github.com/mari-Zz/learning-lravel-CRUD"
+      "src_url": "https://github.com/mari-Zz/random-anime-generator",
+      "web_url": "https://mari-zz.github.io/random-anime-generator/"
     },
     {
       "title": "PHP-product crud",
       "description": "აპლიკაცია პროდუქციის ხილვის, დამატების და წაშლისთვის, შექმინილი PHP-ის ობიექტზე ორიენტირებული დაპროგრამებით, ხოლო frontend აწყობილი React-ზე",
       "img": "./img/projects/phpOOP.png",
-      "url": "https://bitbucket.org/mariamzaq/php-product/src/master/"
+      "src_url": "https://bitbucket.org/mariamzaq/php-product/src/master/",
+      "web_url": "https://product-php.000webhostapp.com/"
     }
   ],
   "contact_header": "კონტაქტი",

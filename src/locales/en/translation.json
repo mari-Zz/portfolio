@@ -11,57 +11,48 @@
   "experience": "My experience",
   "experience_title1": "Full projects I worked on",
   "experience_title2": "See Web-applications I've made",
-  "btn_text": "See Source",
-  "univercity": [
-    {
-      "title": "HTML/CSS",
-      "description": "My first ever project created from scratch,pure HTML/CSS",
-      "img": "./img/projects/ecofood.png",
-      "url": "https://github.com/mari-Zz/my-first-project-ever-HTML-CSS"
-    },
+  "btn_src_text": "Source code",
+  "btn_web_text": "Web-Site",
+  "full_project": [
     {
       "title": "Marvel",
       "description": "Marvel informative website about movies and characters, created using template",
       "img": "./img/projects/marvel.png",
-      "url": "https://github.com/mari-Zz/marvel-website"
+      "src_url": "https://github.com/mari-Zz/marvel-website"
     },
     {
       "title": "Store website",
       "description": "Profesional project I worked on, website renovation, wordpress",
       "img": "./img/projects/otsneba.png",
-      "url": "http://otsneba.ge/"
+      "web_url": "http://otsneba.ge/"
     },
     {
       "title": "Alfaplus",
       "description": "Professional project, worked on with a group, technology items website, without E-commerce",
       "img": "./img/projects/alfaplus.png",
-      "url": "https://www.alfaplus.ge/"
+      "web_url": "https://www.alfaplus.ge/"
     },
     {
       "title": "Portfolio",
       "description": "My personal portfolio web-site, created using React.js, updating with time",
       "img": "./img/projects/portfolio.png",
-      "url": "https://github.com/mari-Zz/portfolio"
+      "src_url": "https://github.com/mari-Zz/portfolio"
     }
   ],
-  "professional": [
+  "nonFull_project": [
     {
       "title": "Random generator",
       "description": "Random anime generator by genres,javascript app, using foreign API",
       "img": "./img/projects/anime.png",
-      "url": "https://github.com/mari-Zz/random-anime-generator"
-    },
-    {
-      "title": "CRUD application",
-      "description": "Crud application, useing laravel and sql",
-      "img": "./img/projects/crud.png",
-      "url": "https://github.com/mari-Zz/learning-lravel-CRUD"
+      "src_url": "https://github.com/mari-Zz/random-anime-generator",
+      "web_url": "https://mari-zz.github.io/random-anime-generator/"
     },
     {
       "title": "PHP-product crud",
       "description": "Application for product viewing, adding and deleting, based on php OOP and react frontend",
       "img": "./img/projects/phpOOP.png",
-      "url": "https://bitbucket.org/mariamzaq/php-product/src/master/"
+      "src_url": "https://bitbucket.org/mariamzaq/php-product/src/master/",
+      "web_url": "https://product-php.000webhostapp.com/"
     }
   ],
   "contact_header": "Contact",

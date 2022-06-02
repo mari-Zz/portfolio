@@ -44,18 +44,35 @@ function Experiences({ currentLanguage }) {
                   >
                     {item.description}
                   </p>
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`btn bttn-color ${
-                      currentLanguage === "en"
-                        ? "heading-font"
-                        : "heading-font-ge"
-                    }`}
-                  >
-                    {t("btn_text")}
-                  </a>
+                  {item.src_url ? (
+                    <a
+                      href={item.src_url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`btn bttn-color my-3 ${
+                        currentLanguage === "en"
+                          ? "heading-font"
+                          : "heading-font-ge"
+                      }`}
+                    >
+                      {t("btn_src_text")}
+                    </a>
+                  ) : null}
+
+                  {item.web_url ? (
+                    <a
+                      href={item.web_url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`btn bttn-color ${
+                        currentLanguage === "en"
+                          ? "heading-font"
+                          : "heading-font-ge"
+                      }`}
+                    >
+                      {t("btn_web_text")}
+                    </a>
+                  ) : null}
                 </div>
               </div>
             );
@@ -77,11 +94,11 @@ function Experiences({ currentLanguage }) {
 
       {renderSection(
         t("experience_title1"),
-        t("univercity", { returnObjects: true })
+        t("full_project", { returnObjects: true })
       )}
       {renderSection(
         t("experience_title2"),
-        t("professional", { returnObjects: true })
+        t("nonFull_project", { returnObjects: true })
       )}
     </div>
   );
